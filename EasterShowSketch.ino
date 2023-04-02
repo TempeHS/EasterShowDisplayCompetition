@@ -52,17 +52,17 @@ void loop() {
 	 delay(3000);
  } else if (randNumber == 3)
 	 {
-	 musicPlayer.playFullFile("/track004.mp3");
-	 delay(3000);
+		 WindMillOn ();
+		WindMillOff ();
+		delay(3000);
  } else if (randNumber == 4)
 	 {
 	 musicPlayer.playFullFile("/track005.mp3");
 	 delay(3000);
  } else if (randNumber == 5)
 	{
-		WindMillOn ();
-		WindMillOff ();
-		delay(3000);
+	 musicPlayer.playFullFile("/track004.mp3");
+	 delay(3000);
  }
 }
 
