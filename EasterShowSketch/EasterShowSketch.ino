@@ -41,18 +41,20 @@ void setup() {
 }
 
 void loop() {
- randNumber = random(1, 5);
- if (randNumber ===1)
+  WindMillOn ();
+ int randNumber = random(1, 5);
+ Serial.println(randNumber);
+ if (randNumber == 1)
 	{
 	 musicPlayer.playFullFile("/track002.mp3");
 	 delay(3000);
  } else if (randNumber == 2)
  {
-	 musicPlayer.playFullFile("/track003.mp3");
+	 musicPlayer.playFullFile("/track003.mp3"); 
 	 delay(3000);
  } else if (randNumber == 3)
 	 {
-		 WindMillOn ();
+		WindMillOn ();
 		WindMillOff ();
 		delay(3000);
  } else if (randNumber == 4)
