@@ -14,7 +14,7 @@
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 void setup() {
-  pinMode(1, OUTPUT);
+  pinMode(1, OUTPUT); 
   pinMode(2, OUTPUT);
   randomSeed(analogRead(0));
 
